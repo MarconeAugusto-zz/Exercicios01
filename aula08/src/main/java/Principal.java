@@ -19,7 +19,7 @@ public class Principal {
 
         System.out.println("valor contador 1: " +c1.getValorAtual());
         System.out.println("valor contador 2: " +c2.getValorAtual());
-    /*
+
         Dados_Switch d1 = new Dados_Switch();
         Dados_Switch d2 = new Dados_Switch();
 
@@ -53,6 +53,6 @@ public class Principal {
 
         System.out.println("Portas ocupadas d1: "+ d1.portasOcupadas());
         System.out.println("Portas vazias d1: " + d1.portasVazias());
-        */
+
     }
 }
