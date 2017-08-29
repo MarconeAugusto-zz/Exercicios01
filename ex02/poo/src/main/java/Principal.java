@@ -6,11 +6,13 @@ public class Principal {
         Tempo t2 = new Tempo(12);
         Tempo t3 = new Tempo(15,25,56);
         Tempo t4 = new Tempo(3,33);
+        Tempo t5 = new Tempo(31,53,70);
 
         System.out.println("Tempo: " +t1 );
         System.out.println("Tempo: " +t2 );
         System.out.println("Tempo: " +t3 );
         System.out.println("Tempo: " +t4 );
+        System.out.println("Tempo: " +t5 );
 
         System.out.println("Tempo em segundos: " +t1.tempoSegundos());
         System.out.println("Tempo em segundos: " +t2.tempoSegundos());

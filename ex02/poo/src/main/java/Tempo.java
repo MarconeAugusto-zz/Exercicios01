@@ -7,18 +7,24 @@ public class Tempo {
     public Tempo (){}       //Construtor vazio
 
     public Tempo(int h){    //Construtor com hora
-        hora = h;
+        //hora = h;
+        setHora(h);
     }
 
     public Tempo(int h , int m){
-        hora = h;
-        minuto = m;
+        //hora = h;
+        //minuto = m;
+        setHora(h);
+        setMinuto(m);
     }
 
     public Tempo(int h, int m, int s){
-        hora = h;
-        minuto = m;
-        segundo = s;
+        //hora = h;
+        //minuto = m;
+        //segundo = s;
+        setHora(h);
+        setMinuto(m);
+        setSegundo(s);
     }
 
     public String toString(){
@@ -26,7 +32,7 @@ public class Tempo {
     }
 
     public boolean setHora(int h) {
-        if( h <= 23 || h > 0){
+        if( h <= 23 && h > 0){
             hora = h;
             return true;
         }
@@ -37,7 +43,7 @@ public class Tempo {
     }
 
     public boolean setMinuto(int m){
-        if( m <= 59 || m > 0){
+        if( m <= 59 && m > 0){
             minuto = m;
             return true;
         }
@@ -48,7 +54,7 @@ public class Tempo {
     }
 
     public boolean setSegundo(int s){
-        if( s <= 59 || s > 0){
+        if( s <= 59 && s > 0){
             segundo = s;
             return true;
         }
@@ -58,7 +64,7 @@ public class Tempo {
         }
     }
 
-    public void setTempo(int h,int m,int s){
+    public void setTempo(int h, int m, int s){
         setHora(h);
         setMinuto(m);
         setSegundo(s);
